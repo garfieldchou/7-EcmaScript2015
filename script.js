@@ -103,7 +103,7 @@ const n = `${firstName} ${lastName}`;
 console.log(n.startsWith('j'));
 console.log(n.endsWith('th'));
 console.log(n.includes('oh'));
-
+console.log(`${firstName} `.repeat(5));
 
 
 
