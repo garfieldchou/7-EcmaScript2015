@@ -82,7 +82,7 @@ console.log(c);
 
 //////////////////////////////////
 // Lecture: Strings
-
+/*
 let firstName = 'john';
 let lastName = 'Smith';
 const yearOfBirth = 1990;
@@ -104,6 +104,23 @@ console.log(n.startsWith('j'));
 console.log(n.endsWith('th'));
 console.log(n.includes('oh'));
 console.log(`${firstName} `.repeat(5));
+*/
+
+
+//////////////////////////////////
+// Lecture: Arrow functions
+
+const years = [1990, 1965, 1982, 1937];
+
+// ES5
+var ages5 = years.map(function(el){
+    return 2016 - el;
+});
+console.log(ages5);
+
+// ES6
+const ages6 = years.map(el => 2016 - el);
+console.log(ages6);
 
 
 
