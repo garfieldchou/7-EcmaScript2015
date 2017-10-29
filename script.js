@@ -20,10 +20,9 @@ function driversLicence5(passedTest) {
     if (passedTest) {
         var firstName = 'John';
         var yearOfBirth = 1990;
-
-        console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
     }
 
+    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
 }
 
 driversLicence5(true);
@@ -35,10 +34,9 @@ function driversLicence6(passedTest) {
     if (passedTest) {
         let firstName = 'John';
         const yearOfBirth = 1990;
-
-        console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
     }
 
+    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
 }
 
 driversLicence6(true);
