@@ -99,7 +99,9 @@ console.log(`This is ${firstName} ${lastName}. He was born in ${yearOfBirth}. To
 
 
 
-
+const n = `${firstName} ${lastName}`;
+console.log(n.startsWith('j'));
+console.log(n.endsWith('th'));
 
 
 
