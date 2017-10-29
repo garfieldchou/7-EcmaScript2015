@@ -53,9 +53,9 @@ driversLicence6(true);
 
 
 
-let i = 23;
+var i = 23;
 
-for (let i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
     console.log(i);
 }
 
