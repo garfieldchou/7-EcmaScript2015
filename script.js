@@ -160,8 +160,9 @@ const box6 = {
         });
     }
 }
-//box6.clickMe();
+box6.clickMe();
 
+/*
 const box66 = {
     color: 'green',
     position: 1,
@@ -173,13 +174,24 @@ const box66 = {
     }
 }
 box66.clickMe();
+*/
 
+function Person(name) {
+    this.name = name;
+}
 
+// ES5
+Person.prototype.myFriends5 = function (friends) {
+    
+    var arr = friends.map(function(el) {
+        return this.name + ' is friends with ' + el;
+    }.bind(this));
+    
+    console.log(arr);
+}
 
-
-
-
-
+var friends = ['Bob', 'Jane', 'Mark'];
+new Person('John').myFriends5(friends);
 
 
 
