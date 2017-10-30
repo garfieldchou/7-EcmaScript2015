@@ -148,9 +148,19 @@ var box5 = {
         });
     }
 }
-box5.clickMe();
+//box5.clickMe();
 
-
+const box6 = {
+    color: 'green',
+    position: 1,
+    clickMe: function() {
+        document.querySelector('.green').addEventListener('click', () => {
+            var str = 'This is box number ' + this.position + ' and it is ' + this.color;
+            alert(str);
+        });
+    }
+}
+box6.clickMe();
 
 
 
