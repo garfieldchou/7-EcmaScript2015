@@ -193,8 +193,16 @@ Person.prototype.myFriends5 = function (friends) {
 var friends = ['Bob', 'Jane', 'Mark'];
 new Person('John').myFriends5(friends);
 
+// ES6
+Person.prototype.myFriends6 = function (friends) {
 
+    var arr = friends.map(el => `${this.name} is friends with ${el}`);
 
+    console.log(arr);
+}
+
+var friends = ['Bob', 'Jane', 'Mark'];
+new Person('Mike').myFriends5(friends);
 
 
 
