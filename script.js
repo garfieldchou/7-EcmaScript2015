@@ -206,7 +206,7 @@ new Person('Mike').myFriends5(friends);
 */
 
 //////////////////////////////////
-// Lecture: Arrow functions 2
+// Lecture: Destructuring
 
 // ES5
 var john = ['John', 26];
@@ -219,12 +219,18 @@ const [name, age] = ['John', 26];
 console.log(name);
 console.log(age);
 
+const obj = {
+    firstName: 'John',
+    lastName: 'Smith'
+};
 
+const {firstName, lastName} = obj;
+console.log(firstName);
+console.log(lastName);
 
-
-
-
-
+const {firstName: a, lastName: b} = obj;
+console.log(a);
+console.log(b);
 
 
 
