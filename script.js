@@ -320,9 +320,9 @@ var ages = [18, 30, 12, 21];
 var sum2 = addFourAges.apply(null, ages);
 console.log(sum2);
 
-
-
-
+//ES6
+const sum3 = addFourAges(...ages);
+console.log(sum3);
 
 
 
