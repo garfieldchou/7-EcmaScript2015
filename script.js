@@ -307,7 +307,7 @@ console.log(ages.find(cur => cur >= 18));
 
 //////////////////////////////////
 // Lecture: Spread operator
-
+/*
 function addFourAges (a, b, c, d) {
     return a + b + c + d;
 }
@@ -336,6 +336,34 @@ const boxes = document.querySelectorAll('.box');
 const all = [h, ...boxes];
 
 Array.from(all).forEach(cur => cur.style.color = 'purple');
+*/
+
+//////////////////////////////////
+// Lecture: REST Parameters
+
+//ES5
+function isFullAge5() {
+    console.log(arguments);
+}
+
+isFullAge5(1990, 1999, 1965);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
