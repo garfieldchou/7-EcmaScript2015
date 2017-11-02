@@ -249,7 +249,7 @@ console.log(retirement);
 
 //////////////////////////////////
 // Lecture: Arrays
-
+/*
 const boxes = document.querySelectorAll('.box');
 
 // ES5
@@ -261,7 +261,7 @@ boxesArr5.forEach(function(cur) {
 
 // ES6
 const boxesArr6 = Array.from(boxes);
-/*
+
 Array.from(boxes).forEach(cur => cur.style.backgroundColor = 'dodgerblue');
 
 
@@ -275,7 +275,7 @@ for(var i = 0; i < boxesArr5.length; i++) {
     boxesArr5[i].textContent = 'I changed to blue';
 
 }
-*/
+
 
 //ES6
 for (const cur of boxesArr6) {
@@ -302,6 +302,26 @@ console.log(ages[full.indexOf(true)]);
 //ES6
 console.log(ages.findIndex(cur => cur >= 18));
 console.log(ages.find(cur => cur >= 18));
+
+*/
+
+//////////////////////////////////
+// Lecture: Spread operator
+
+function addFourAges (a, b, c, d) {
+    return a + b + c + d;
+}
+
+var sum1 = addFourAges(18, 30, 12, 21);
+console.log(sum1);
+
+
+
+
+
+
+
+
 
 
 
