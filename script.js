@@ -340,7 +340,7 @@ Array.from(all).forEach(cur => cur.style.color = 'purple');
 
 //////////////////////////////////
 // Lecture: REST Parameters
-
+/*
 //ES5
 function isFullAge5() {
     //console.log(arguments);
@@ -360,6 +360,18 @@ function isFullAge6(...years) {
 }
 
 isFullAge6(1990, 1999, 1965, 2016, 1987);
+*/
+
+//ES5
+function isFullAge5(limit) {
+    var argsArr = Array.prototype.slice.call(arguments, 1);
+
+    argsArr.forEach(function(cur) {
+        console.log((2016 - cur) >= limit);
+    });
+}
+
+isFullAge5(18, 1990, 1999, 1965);
 
 
 
