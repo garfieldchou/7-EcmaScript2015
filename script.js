@@ -429,8 +429,8 @@ question.set('correct', 3);
 question.set(true, 'Correct answer :D');
 question.set(false, 'Wrong, please try again!');
 
-
-
+console.log(question.get('question'));
+console.log(question.size);
 
 
 
