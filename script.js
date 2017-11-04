@@ -430,11 +430,11 @@ question.set(true, 'Correct answer :D');
 question.set(false, 'Wrong, please try again!');
 
 console.log(question.get('question'));
-console.log(question.size);
+//console.log(question.size);
 
 if (question.has(4)) {
 //    question.delete(4);
-    console.log('Answer 4 is here');
+//    console.log('Answer 4 is here');
 }
 
 //question.clear();
@@ -444,7 +444,9 @@ if (question.has(4)) {
 
 
 for (let [key, value] of question.entries()) {
-    console.log(`This is ${key}, and it's set to ${value}`);
+    if (typeof(key) === 'number') {
+        console.log(`Answer ${key}: ${value}`);
+    }
 }
 
 
