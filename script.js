@@ -432,6 +432,9 @@ question.set(false, 'Wrong, please try again!');
 console.log(question.get('question'));
 console.log(question.size);
 
+if (question.has(4)) {
+    question.delete(4);
+}
 
 
 
