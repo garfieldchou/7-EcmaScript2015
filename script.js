@@ -623,7 +623,7 @@ class Street extends Element {
 }
 
 const allParks = [new Park('Green Park', 1987, 0.2, 215),
-                 new Park('National Park', 1894, 2.9, 3451),
+                 new Park('National Park', 1894, 2.9, 3541),
                  new Park('Oak Park', 1953, 0.4, 949)];
 
 const allStreets = [new Street('Ocean Avenue', 1999, 1.1, 4),
@@ -631,11 +631,25 @@ const allStreets = [new Street('Ocean Avenue', 1999, 1.1, 4),
                    new Street('4th Street', 2015, 0.8),
                    new Street('Sunset Boulevard', 1982, 2.5, 5)];
 
+function reportParks(p) {
+
+    console.log('-----PARKS REPORT-----');
+
+    // Density
+    p.forEach(el => el.treeDensity());
+
+    // Average age
+
+    // Which park has more than 1000 trees
+}
+
+function reportStreets(s) {
 
 
+}
 
-
-
+reportParks(allParks);
+reportStreets(allStreets);
 
 
 
